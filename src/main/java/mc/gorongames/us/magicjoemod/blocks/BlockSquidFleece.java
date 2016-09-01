@@ -1,6 +1,7 @@
 package mc.gorongames.us.magicjoemod.blocks;
 
 import mc.gorongames.us.magicjoemod.lib.Constants;
+import mc.gorongames.us.magicjoemod.lib.MagicJoeTab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -16,7 +17,7 @@ public class BlockSquidFleece extends Block {
 		this.setResistance(4f);
 		this.setHarvestLevel("sheers", 2);
 		this.setStepSound(soundTypeCloth);
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(MagicJoeTab.tabMagicJoe);
 		this.setUnlocalizedName(Constants.MODID + "_" + name);
 //		this.setBlockTextureName(Constants.MODID + ":" + name);
 		GameRegistry.registerBlock(this, name);

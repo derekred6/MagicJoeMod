@@ -1,7 +1,7 @@
 package mc.gorongames.us.magicjoemod.items;
 
 import mc.gorongames.us.magicjoemod.lib.Constants;
-import net.minecraft.creativetab.CreativeTabs;
+import mc.gorongames.us.magicjoemod.lib.MagicJoeTab;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -14,7 +14,7 @@ public class ItemWoolFabric extends Item {
 		setUnlocalizedName(Constants.MODID + "_" + name);
 		//setTextureName(Constants.MODID + ":" + name);
 		GameRegistry.registerItem(this, name);
-		setCreativeTab(CreativeTabs.tabMaterials);
+		setCreativeTab(MagicJoeTab.tabMagicJoe);
 		
 	}
 
