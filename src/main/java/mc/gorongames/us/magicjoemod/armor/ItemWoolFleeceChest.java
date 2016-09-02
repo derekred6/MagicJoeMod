@@ -1,6 +1,7 @@
 package mc.gorongames.us.magicjoemod.armor;
 
 import mc.gorongames.us.magicjoemod.lib.Constants;
+import mc.gorongames.us.magicjoemod.lib.MagicJoeTab;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -16,7 +17,7 @@ public class ItemWoolFleeceChest extends ItemArmor {
 		setUnlocalizedName(Constants.MODID + "_" + name);
 //		setTextureName(Constants.MODID + ":" + name);
 		GameRegistry.registerItem(this, name);
-		setCreativeTab(CreativeTabs.tabTools);
+		setCreativeTab(MagicJoeTab.tabMagicJoe);
 	  
 	}
 

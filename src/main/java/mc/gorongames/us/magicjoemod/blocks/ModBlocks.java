@@ -24,10 +24,10 @@ public final class ModBlocks {
         enderfleeceBlock = new BlockEnderFleece();
         squidfleeceBlock = new BlockSquidFleece();
 		
-//        GameRegistry.registerBlock(goldenfleeceBlock, "goldenfleeceblock");
-//        GameRegistry.registerBlock(rainbowfleeceBlock, "rainbowfleeceblock");
-//        GameRegistry.registerBlock(enderfleeceBlock, "enderfleeceblock");
-//        GameRegistry.registerBlock(squidfleeceBlock, "squidfleeceblock");
+        GameRegistry.registerBlock(goldenfleeceBlock, "goldenfleeceBlock");
+        GameRegistry.registerBlock(rainbowfleeceBlock, "rainbowfleeceBlock");
+        GameRegistry.registerBlock(enderfleeceBlock, "enderfleeceBlock");
+        GameRegistry.registerBlock(squidfleeceBlock, "squidfleeceBlock");
         
         
 	}
@@ -37,5 +37,8 @@ public final class ModBlocks {
 		RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
 		
 		renderItem.getItemModelMesher().register(Item.getItemFromBlock(goldenfleeceBlock), 0, new ModelResourceLocation(Constants.MODID + ":" + ((BlockGoldenFleece) goldenfleeceBlock).getName(), "inventory"));
+		renderItem.getItemModelMesher().register(Item.getItemFromBlock(rainbowfleeceBlock), 0, new ModelResourceLocation(Constants.MODID + ":" + ((BlockRainbowFleece) rainbowfleeceBlock).getName(), "inventory"));
+		renderItem.getItemModelMesher().register(Item.getItemFromBlock(enderfleeceBlock), 0, new ModelResourceLocation(Constants.MODID + ":" + ((BlockEnderFleece) enderfleeceBlock).getName(), "inventory"));
+		renderItem.getItemModelMesher().register(Item.getItemFromBlock(squidfleeceBlock), 0, new ModelResourceLocation(Constants.MODID + ":" + ((BlockSquidFleece) squidfleeceBlock).getName(), "inventory"));
 	}
 }

@@ -20,7 +20,7 @@ public class BlockGoldenFleece extends Block{
 		setCreativeTab(MagicJoeTab.tabMagicJoe);
 		this.setUnlocalizedName(Constants.MODID + "_" + name);
 //		this.setBlockTextureName(Constants.MODID + ":" + name);
-		GameRegistry.registerBlock(this, name);
+//		GameRegistry.registerBlock(this, name);
 		
 	}
 

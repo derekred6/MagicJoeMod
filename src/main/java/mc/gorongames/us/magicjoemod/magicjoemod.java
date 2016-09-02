@@ -40,12 +40,13 @@ public class magicjoemod {
 	public void init(FMLInitializationEvent event){
 		
 	    JoemodCrafting.init();
+    	ModBlocks.init();
+    	ModArmor.init();
 	    
 	    //register renders
 	    if(event.getSide() == Side.CLIENT) {
 	    	
 	    	ModItems.init();
-	    	ModBlocks.init();
 	    	
 	    }
 	    
