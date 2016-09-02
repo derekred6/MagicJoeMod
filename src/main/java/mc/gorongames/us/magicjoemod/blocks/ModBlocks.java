@@ -1,7 +1,5 @@
 package mc.gorongames.us.magicjoemod.blocks;
 
-import com.sun.org.apache.xml.internal.security.encryption.Reference;
-
 import mc.gorongames.us.magicjoemod.lib.Constants;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;

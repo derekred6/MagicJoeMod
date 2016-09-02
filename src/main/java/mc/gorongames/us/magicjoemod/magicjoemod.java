@@ -5,7 +5,6 @@ package mc.gorongames.us.magicjoemod;
 import mc.gorongames.us.magicjoemod.CraftingRecipes.JoemodCrafting;
 import mc.gorongames.us.magicjoemod.armor.ModArmor;
 import mc.gorongames.us.magicjoemod.blocks.ModBlocks;
-import mc.gorongames.us.magicjoemod.entity.ModEntity;
 import mc.gorongames.us.magicjoemod.items.ItemEnderFleeceFabric;
 import mc.gorongames.us.magicjoemod.items.ModItems;
 import mc.gorongames.us.magicjoemod.lib.Constants;
