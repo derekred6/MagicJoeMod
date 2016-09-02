@@ -25,26 +25,6 @@ public class ItemSquidFleeceHelmet extends ItemArmor {
 		setCreativeTab(MagicJoeTab.tabMagicJoe);
 		
 	}
-	
-	
-	
-//	@Override
-//	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-		
-//		super.onArmorTick(world, player, armor);
-//		ItemStack boots = player.inventory.armorInventory[0];
-//		ItemStack pants = player.inventory.armorInventory[1];
-//		ItemStack chest = player.inventory.armorInventory[2];
-//		ItemStack head = player.inventory.armorInventory[3];
-//		
-//		if(boots != null && pants != null && chest != null)
-//			if(boots.getItem() == ((ItemSquidFleeceBoots) squidfleeceboots).getname() && pants.getItem() == squidfleeceleggings && chest.getItem() == squidfleecechest)
-//				player.addPotionEffect(new PotionEffect(Potion.invisibility.id, 5, 0));
-//		
-//	  player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 500, 4));
-//	  player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 500, 4));
-//	  
-//	}
 
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity,int slot, String type){

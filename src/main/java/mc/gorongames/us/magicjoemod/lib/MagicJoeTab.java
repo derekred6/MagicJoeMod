@@ -1,5 +1,6 @@
 package mc.gorongames.us.magicjoemod.lib;
 
+import mc.gorongames.us.magicjoemod.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -12,8 +13,7 @@ public class MagicJoeTab {
 
 		@Override
 		public Item getTabIconItem() {
-			// TODO Auto-generated method stub
-			return Items.string;
+			return ModItems.goldenfleecefabricItem;
 		}
 		
 	};

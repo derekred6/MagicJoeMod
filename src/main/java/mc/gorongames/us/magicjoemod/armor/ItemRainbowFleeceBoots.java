@@ -26,10 +26,15 @@ public class ItemRainbowFleeceBoots extends ItemArmor {
 	}
 	
 	@Override
-	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-	  player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 500, 4));
-	  player.addPotionEffect(new PotionEffect(Potion.jump.id, 500, 4));
-	  
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
+		
+		if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == ModArmor.squidfleecehelmetItem
+		        && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == ModArmor.squidfleecechestItem
+		        && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == ModArmor.squidfleeceleggingsItem
+		        && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == ModArmor.squidfleecebootsItem) {
+			  player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 500, 4));
+			  player.addPotionEffect(new PotionEffect(Potion.jump.id, 500, 4));
+		}
 	}
 
 	@Override

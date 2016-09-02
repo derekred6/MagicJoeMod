@@ -24,13 +24,6 @@ public class ItemRainbowFleeceChest extends ItemArmor {
 		setCreativeTab(MagicJoeTab.tabMagicJoe);
 		
 	}
-	
-	@Override
-	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-	  player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 500, 4));
-	  player.addPotionEffect(new PotionEffect(Potion.jump.id, 500, 4));
-	  
-	}
 
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity,int slot, String type){

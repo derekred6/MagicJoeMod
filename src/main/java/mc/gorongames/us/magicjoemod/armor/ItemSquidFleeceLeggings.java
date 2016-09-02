@@ -24,12 +24,6 @@ public class ItemSquidFleeceLeggings extends ItemArmor {
 		setCreativeTab(MagicJoeTab.tabMagicJoe);
 		
 	}
-	
-//	@Override
-//	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-//	  player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 500, 4));
-//	  
-//	}
 
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity,int slot, String type){

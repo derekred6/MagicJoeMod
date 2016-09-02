@@ -26,12 +26,6 @@ public class ItemGoldenFleeceChest extends ItemArmor {
 	}
 	
 	@Override
-	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-	  player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 500, 4));
-	  
-	}
-	
-	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity,int slot, String type){
 
 		if(stack.getItem() == ModArmor.goldenfleecechestItem){
