@@ -5,8 +5,13 @@ import mc.gorongames.us.magicjoemod.lib.Constants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.RenderItem;
 import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
 import net.minecraftforge.common.util.EnumHelper;
 
 public final class ModArmor {
@@ -88,6 +93,6 @@ public final class ModArmor {
 		renderItem.getItemModelMesher().register(woolfleecebootsItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemWoolFleeceBoots) woolfleecebootsItem).getName(), "inventory"));
 		
 		
+		
 	}
-
 }

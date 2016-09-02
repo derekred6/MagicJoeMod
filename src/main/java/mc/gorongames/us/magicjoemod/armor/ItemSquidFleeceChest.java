@@ -25,12 +25,12 @@ public class ItemSquidFleeceChest extends ItemArmor {
 		
 	}
 	
-	@Override
-	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-	  player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 500, 4));
-	  player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 500, 4));
-	  
-	}
+//	@Override
+//	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
+//	  player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 500, 4));
+//	  player.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 500, 4));
+//	  
+//	}
 
 	@Override
 	public String getArmorTexture(ItemStack stack, Entity entity,int slot, String type){
