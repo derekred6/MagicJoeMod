@@ -15,6 +15,7 @@ public class CommonProxy {
 		ModItems.preinit();
 		ModBlocks.preinit();
 		ModArmor.preinit();
+		
 	}
 	
 	public void init(FMLInitializationEvent event) {
