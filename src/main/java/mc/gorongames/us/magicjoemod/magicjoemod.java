@@ -25,9 +25,6 @@ public class magicjoemod {
 	public void preInit(FMLPreInitializationEvent event){
     	
 		this.proxy.preInit(event);
-		ModBlocks.preinit();
-	    ModItems.preinit();
-	    ModArmor.preinit();
 	    //ModEntity.init();
 	    
 	}
@@ -36,17 +33,6 @@ public class magicjoemod {
 	public void init(FMLInitializationEvent event){
 		
 		this.proxy.init(event);
-		
-	    JoemodCrafting.init();
-	    
-	    //register renders
-	    if(event.getSide() == Side.CLIENT) {
-	    	
-	    	
-	    	ModArmor.init();
-	    	ModBlocks.init();
-	    	
-	    }
 	    
 	}
 	

@@ -42,14 +42,5 @@ public final class ModItems {
 	
 	public static void init() {
 		
-    	RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-    	
-    	renderItem.getItemModelMesher().register(goldenscrapsItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemGoldenScraps) goldenscrapsItem).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(goldenfleecefabricItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemGoldenFleeceFabric) goldenfleecefabricItem).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(rainbowscrapsItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemRainbowScraps) rainbowscrapsItem).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(rainbowfleecefabricItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemRainbowFleeceFabric) rainbowfleecefabricItem).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(enderfleecefabricItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemEnderFleeceFabric) enderfleecefabricItem).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(squidfleecefabricItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemSquidFleeceFabric) squidfleecefabricItem).getName(), "inventory"));
-    	renderItem.getItemModelMesher().register(woolfabricItem, 0, new ModelResourceLocation(Constants.MODID + ":" + ((ItemWoolFabric) woolfabricItem).getName(), "inventory"));
 	}
 }
