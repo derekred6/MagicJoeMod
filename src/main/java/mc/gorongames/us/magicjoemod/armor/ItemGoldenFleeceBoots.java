@@ -28,10 +28,10 @@ public class ItemGoldenFleeceBoots extends ItemArmor{
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
 		
-		if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == ModArmor.squidfleecehelmetItem
-		        && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == ModArmor.squidfleecechestItem
-		        && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == ModArmor.squidfleeceleggingsItem
-		        && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == ModArmor.squidfleecebootsItem) {
+		if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == ModArmor.goldenfleecehelmetItem
+		        && player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == ModArmor.goldenfleecechestItem
+		        && player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == ModArmor.goldenfleeceleggingsItem
+		        && player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == ModArmor.goldenfleecebootsItem) {
 			  player.addPotionEffect(new PotionEffect(Potion.regeneration.id, 500, 4));
 		}
 	}

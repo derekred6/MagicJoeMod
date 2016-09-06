@@ -36,6 +36,7 @@ public final class ModArmor {
 	public static ItemArmor woolfleecechestItem;
 	public static ItemArmor woolfleeceleggingsItem;
 	public static ItemArmor woolfleecebootsItem;
+	
 	static ArmorMaterial GoldenArmorMaterial = EnumHelper.addArmorMaterial("GoldenArmorMaterial", "GoldenArmor", 66, new int[]{6, 16, 12, 6}, 20);
 	static ArmorMaterial RainbowArmorMaterial = EnumHelper.addArmorMaterial("RainbowArmorMaterial", "RainbowArmor", 66, new int[]{6, 16, 12, 6}, 20);
 	static ArmorMaterial EnderArmorMaterial = EnumHelper.addArmorMaterial("EnderArmorMaterial", "EnderArmor", 23, new int[]{3, 9, 8, 3}, 20);

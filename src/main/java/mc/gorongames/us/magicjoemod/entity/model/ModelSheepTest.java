@@ -95,7 +95,4 @@ public class ModelSheepTest extends ModelBase {
 		this.Leg4.rotateAngleX = MathHelper.cos(time * 0.6662f) * 1.4f * limbSwingDistance;
 		
 	}
-//	Render(){
-//		
-//	}
 }

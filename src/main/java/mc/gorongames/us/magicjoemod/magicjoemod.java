@@ -2,10 +2,12 @@ package mc.gorongames.us.magicjoemod;
 
 
 
+import mc.gorongames.us.magicjoemod.entity.ModEntity;
 import mc.gorongames.us.magicjoemod.lib.Constants;
 import mc.gorongames.us.magicjoemod.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -16,6 +18,10 @@ public class magicjoemod {
 
 	@SidedProxy(clientSide="mc.gorongames.us.magicjoemod.proxy.ClientProxy", serverSide="mc.gorongames.us.magicjoemod.proxy.ServerProxy")
 	public static CommonProxy proxy;
+	
+	@Instance(Constants.MODID)
+	public static magicjoemod modInstance;
+	
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
@@ -28,6 +34,7 @@ public class magicjoemod {
 	@EventHandler
 	public void init(FMLInitializationEvent event){
 		this.proxy.init(event);
+		ModEntity.init();
 	    
 	}
 	

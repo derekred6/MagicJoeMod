@@ -1,4 +1,6 @@
 itemGroup.magicjoe=Magic Joe Mod
+entity.magicjoe_EntitySheepTest.name=Sheep test
+entity.magicjoe_EntityGoldenJoe.name=Golden Joe
 tile.magicjoe_goldenfleeceblock.name=Gold Fleece Block
 tile.magicjoe_rainbowfleeceblock.name=Rainbow Fleece Block
 tile.magicjoe_enderfleeceblock.name=Ender Fleece Block
