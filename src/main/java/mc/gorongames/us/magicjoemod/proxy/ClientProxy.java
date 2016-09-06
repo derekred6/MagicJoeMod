@@ -2,11 +2,17 @@ package mc.gorongames.us.magicjoemod.proxy;
 
 import mc.gorongames.us.magicjoemod.armor.ArmorRenderRegister;
 import mc.gorongames.us.magicjoemod.blocks.BlockRenderRegister;
+import mc.gorongames.us.magicjoemod.entity.EntityEnderJoe;
 import mc.gorongames.us.magicjoemod.entity.EntityGoldenJoe;
+import mc.gorongames.us.magicjoemod.entity.EntityRainbowJoe;
 import mc.gorongames.us.magicjoemod.entity.EntitySheepTest;
+import mc.gorongames.us.magicjoemod.entity.RenderEntityEnderJoe;
 import mc.gorongames.us.magicjoemod.entity.RenderEntityGoldenJoe;
+import mc.gorongames.us.magicjoemod.entity.RenderEntityRainbowJoe;
 import mc.gorongames.us.magicjoemod.entity.RenderEntitySheepTest;
+import mc.gorongames.us.magicjoemod.entity.model.ModelEnderJoe;
 import mc.gorongames.us.magicjoemod.entity.model.ModelGoldenJoe;
+import mc.gorongames.us.magicjoemod.entity.model.ModelRainbowJoe;
 import mc.gorongames.us.magicjoemod.entity.model.ModelSheepTest3;
 import mc.gorongames.us.magicjoemod.items.ItemRenderRegister;
 import net.minecraft.client.Minecraft;
@@ -32,6 +38,9 @@ public class ClientProxy extends CommonProxy {
         BlockRenderRegister.registerBlockRenderer();
         RenderingRegistry.registerEntityRenderingHandler(EntitySheepTest.class, new RenderEntitySheepTest(Minecraft.getMinecraft().getRenderManager(), new ModelSheepTest3(), 0));
         RenderingRegistry.registerEntityRenderingHandler(EntityGoldenJoe.class, new RenderEntityGoldenJoe(Minecraft.getMinecraft().getRenderManager(), new ModelGoldenJoe(), 0));
+        RenderingRegistry.registerEntityRenderingHandler(EntityRainbowJoe.class, new RenderEntityRainbowJoe(Minecraft.getMinecraft().getRenderManager(), new ModelRainbowJoe(), 0));
+        RenderingRegistry.registerEntityRenderingHandler(EntityEnderJoe.class, new RenderEntityEnderJoe(Minecraft.getMinecraft().getRenderManager(), new ModelEnderJoe(), 0));
+        
     }
 
     @Override
