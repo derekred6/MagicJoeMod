@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.layers.LayerSheepWool"/>
+<fullyQualifiedTypeName name="mc.gorongames.us.magicjoemod.entity.RenderEntityGoldenJoe"/>
+<fullyQualifiedTypeName name="mc.gorongames.us.magicjoemod.entity.EntityGoldenJoe"/>
+</qualifiedTypeNameHistroy>
