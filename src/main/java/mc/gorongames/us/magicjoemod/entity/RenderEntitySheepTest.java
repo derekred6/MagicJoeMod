@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderEntitySheepTest extends RenderLiving {
 
-	private static ResourceLocation EntitySheepTestTexture = new ResourceLocation(Constants.MODID + ":" + "textures/entity/joe/GoldJoe.png");
+	private static ResourceLocation EntitySheepTestTexture = new ResourceLocation(Constants.MODID + ":" + "textures/entity/joe/models/nope.png");
 	
 	private static final String __OBFID = "CL_00000984";
 	

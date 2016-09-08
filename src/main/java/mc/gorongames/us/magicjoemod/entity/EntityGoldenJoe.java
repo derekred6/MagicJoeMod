@@ -1,6 +1,5 @@
 package mc.gorongames.us.magicjoemod.entity;
 
-import mc.gorongames.us.magicjoemod.lib.MagicJoeTab;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -22,7 +21,6 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class EntityGoldenJoe extends EntitySheep {
 	
@@ -100,13 +98,20 @@ public class EntityGoldenJoe extends EntitySheep {
         this.sheepTimer = this.entityAIEatGrass.getEatingGrassTimer();
         super.updateAITasks();
     }
+    
+    public void onLivingUpdate() {
+        if (this.worldObj.isRemote) {
+            this.sheepTimer = Math.max(0, this.sheepTimer - 1);
+        }
+        super.onLivingUpdate();
+    }
 
 	//water based
-    public boolean canBreathUnderWater() {
-    	
-    	return true;
-    			
-    }
+//    public boolean canBreathUnderWater() {
+//    	
+//    	return true;
+//    			
+//    }
 //    
 //	water based
     public boolean isPushedbyWater() {
@@ -114,21 +119,25 @@ public class EntityGoldenJoe extends EntitySheep {
     	return false;
     	
     }
-//    
-    public void onLivingUpdate() {
-    	
-    	super.onLivingUpdate();
-    	
-    	if (this.isInWater()) {
-    		
-    		this.setAir(300);
-    		this.limbSwingAmount = 0;
-    		this.limbSwing = 0;
-    		this.prevLimbSwingAmount = this.limbSwingAmount;
-    		
-    	}
-    }
-
+    
+ 
+//    public void onLivingUpdate() {
+//    	
+//    	super.onLivingUpdate();
+//
+//		this.limbSwingAmount = 0;
+//		this.limbSwing = 0;
+//		this.prevLimbSwingAmount = this.limbSwingAmount;
+		
+//    	if (this.isInWater()) {
+//    		
+//    		this.setAir(300);
+//    		this.limbSwingAmount = 0;
+//    		this.limbSwing = 0;
+//    		this.prevLimbSwingAmount = this.limbSwingAmount;
+//    		
+//    	}
+    
     public class sheepTestMoveHelper extends EntityMoveHelper {
 
 		private EntityGoldenJoe entity = EntityGoldenJoe.this;
@@ -242,8 +251,6 @@ public class EntityGoldenJoe extends EntitySheep {
 		public double getPosZ() {
 			
 			return this.posZ;
-			
 		}
     }
-
 }

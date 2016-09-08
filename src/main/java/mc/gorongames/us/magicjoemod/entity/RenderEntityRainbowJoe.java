@@ -9,7 +9,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderEntityRainbowJoe extends RenderLiving {
 
-private static ResourceLocation EntityGoldenJoeTexture = new ResourceLocation(Constants.MODID + ":" + "textures/entity/joe/models/RainbowJoe.png");
+private static ResourceLocation EntityRainbowJoeTexture = new ResourceLocation(Constants.MODID + ":" + "textures/entity/joe/models/RainbowJoe.png");
 	
 	private static final String __OBFID = "CL_00000984";
 	
@@ -18,16 +18,16 @@ private static ResourceLocation EntityGoldenJoeTexture = new ResourceLocation(Co
 //		this.addLayer(new LayerSheepWool(this));
 	}
 	
-	protected ResourceLocation func_180572_a(EntityGoldenJoe entity) {
+	protected ResourceLocation func_180572_a(EntityRainbowJoe entity) {
 		
-		return EntityGoldenJoeTexture;
+		return EntityRainbowJoeTexture;
 		
 	}
 	
 	@Override
 	protected ResourceLocation getEntityTexture(Entity entity) {
 		
-		return this.func_180572_a((EntityGoldenJoe) entity);
+		return this.func_180572_a((EntityRainbowJoe) entity);
 		
 	}
 }

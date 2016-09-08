@@ -12,10 +12,10 @@ public class ModEntity {
 	}
 	
 	public static void init() { //aka main aka register Entity
-		createEntity(EntitySheepTest.class, "Sheep Test", 0x000000, 0xffffff);
-		createEntity(EntityGoldenJoe.class, "Golden Joe", 0xf3f306, 0xe1c301);
-		createEntity(EntityRainbowJoe.class, "Rainbow Joe", 0xffffff , 0xffffff);
-		createEntity(EntityRainbowJoe.class, "Ender Joe", 0x0c0c0c, 0x000000);
+		createEntity(EntitySheepTest.class, "SheepTest", 0x000000, 0xffffff);
+		createEntity(EntityGoldenJoe.class, "GoldenJoe", 0xf3f306, 0xe1c301);
+		createEntity(EntityRainbowJoe.class, "RainbowJoe", 0xffffff , 0xffffff);
+		createEntity(EntityEnderJoe.class, "EnderJoe", 0x0c0c0c, 0x000000);
 		
 	}
 	

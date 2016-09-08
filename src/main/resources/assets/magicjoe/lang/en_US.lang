@@ -1,10 +1,18 @@
-itemGroup.magicjoe=Magic Joe Mod
+itemGroup.MagicJoe=Magic Joe Mod
+
 entity.magicjoe_EntitySheepTest.name=Sheep test
 entity.magicjoe_EntityGoldenJoe.name=Golden Joe
-tile.magicjoe_goldenfleeceblock.name=Gold Fleece Block
-tile.magicjoe_rainbowfleeceblock.name=Rainbow Fleece Block
-tile.magicjoe_enderfleeceblock.name=Ender Fleece Block
-tile.magijoe_squidfleeceblock.name=Squid Fleece Block
+
+entity.GoldenJoe.name=Golden Joe
+entity.RainbowJoe.name=Rainbow Joe
+entity.EnderJoe.name=Ender Joe
+entity.SquidJoe.name=Squid Joe
+
+tile.magicjoe_goldenfleeceBlock.name=Gold Fleece Block
+tile.magicjoe_rainbowfleeceBlock.name=Rainbow Fleece Block
+tile.magicjoe_enderfleeceBlock.name=Ender Fleece Block
+tile.magijoe_squidfleeceBlock.name=Squid Fleece Block
+
 item.magicjoe_goldenscraps.name=Golden Scraps
 item.magicjoe_goldenfleecefabric.name=Golden Fleece Fabric
 item.magicjoe_rainbowscraps.name=Rainbow Scraps
@@ -14,7 +22,7 @@ item.magicjoe_squidfleecefabric.name=Squid Fleece Fabric
 item.magicjoe_woolfabric.name=Wool Fabric
 item.magicjoe_goldenfleecehelmet.name=Golden Fleece Helmet
 item.magicjoe_goldenfleecechest.name=Golden Fleece Chestplate
-item.magicjoe_goldenfleeceleggings.nameGolden Fleece Leggings
+item.magicjoe_goldenfleeceleggings.name=Golden Fleece Leggings
 item.magicjoe_goldenfleeceboots.name=Golden Fleece Boots
 item.magicjoe_rainbowfleecehelmet.name=Rainbow Fleece Helmet
 item.magicjoe_rainbowfleecechest.name=Rainbow Fleece Chestplate
@@ -30,5 +38,5 @@ item.magicjoe_squidfleeceleggings.name=Squid Fleece Leggings
 item.magicjoe_squidfleeceboots.name=Squid Fleece Boots
 item.magicjoe_woolfleecehelmet.name=Wool Helmet
 item.magicjoe_woolfleecechest.name=Wool Chestplate
-item.magicjoe_woolfleecelegings.name=Wool Leggings
+item.magicjoe_woolfleeceleggings.name=Wool Leggings
 item.magicjoe_woolfleeceboots.name=Wool Boots
