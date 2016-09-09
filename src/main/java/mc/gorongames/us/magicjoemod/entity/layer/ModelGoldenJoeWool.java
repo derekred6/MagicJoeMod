@@ -1,21 +1,15 @@
 package mc.gorongames.us.magicjoemod.entity.layer;
 
+import mc.gorongames.us.magicjoemod.entity.EntityGoldenJoe;
 import net.minecraft.client.model.ModelQuadruped;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.passive.EntitySheep;
 
 public class ModelGoldenJoeWool extends ModelQuadruped {
 	
-//	public ModelRenderer Head = new ModelRenderer(this, 0, 0);
-//	public ModelRenderer Body = new ModelRenderer(this, 0, 0);
-//	public ModelRenderer Leg1 = new ModelRenderer(this, 0, 0);
-//	public ModelRenderer Leg2 = new ModelRenderer(this, 0, 0);
-//	public ModelRenderer Leg3 = new ModelRenderer(this, 0, 0);
-//	public ModelRenderer Leg4 = new ModelRenderer(this, 0, 0);
 	private float headRotationAngleX;
-    private static final String __OBFID = "CL_00000853";	
+    private static final String __OBFID = "CL_00000852";	
   
   public ModelGoldenJoeWool() {
 	  
@@ -42,12 +36,16 @@ public class ModelGoldenJoeWool extends ModelQuadruped {
       
 
   }
-  
+
+  /**
+   * Used for easily adding entity-dependent animations. The second and third float params here are the same second
+   * and third as in the setRotationAngles method.
+   */
   public void setLivingAnimations(EntityLivingBase p_78086_1_, float p_78086_2_, float p_78086_3_, float p_78086_4_)
   {
       super.setLivingAnimations(p_78086_1_, p_78086_2_, p_78086_3_, p_78086_4_);
-      this.head.rotationPointY = 6.0F + ((EntitySheep)p_78086_1_).getHeadRotationPointY(p_78086_4_) * 9.0F;
-      this.headRotationAngleX = ((EntitySheep)p_78086_1_).getHeadRotationAngleX(p_78086_4_);
+      this.head.rotationPointY = 6.0F + ((EntityGoldenJoe)p_78086_1_).getHeadRotationPointY(p_78086_4_) * 9.0F;
+      this.headRotationAngleX = ((EntityGoldenJoe)p_78086_1_).getHeadRotationAngleX(p_78086_4_);
   }
   
 //  public void render(Entity entity, float time, float limbSwingDistance, float p_78088_4_, float headYRot, float headXRot, float YTrans) {
@@ -96,12 +94,16 @@ public class ModelGoldenJoeWool extends ModelQuadruped {
 //    model.rotateAngleY = y;
 //    model.rotateAngleZ = z;
 //  }
-  
-  public void setRotationAngles(float time, float limbSwingDistance, float p_78087_3_, float headYRot, float headXRot, Entity entity) {
 
-	  this.setRotationAngles(time, limbSwingDistance, p_78087_3_, headYRot, headXRot, entity);
-	  this.head.rotateAngleX = this.headRotationAngleX;
-	  
+  /**
+   * Sets the model's various rotation angles. For bipeds, par1 and par2 are used for animating the movement of arms
+   * and legs, where par1 represents the time(so that arms and legs swing back and forth) and par2 represents how
+   * "far" arms and legs can swing at most.
+   */
+  public void setRotationAngles(float p_78087_1_, float p_78087_2_, float p_78087_3_, float p_78087_4_, float p_78087_5_, float p_78087_6_, Entity p_78087_7_)
+  {
+      super.setRotationAngles(p_78087_1_, p_78087_2_, p_78087_3_, p_78087_4_, p_78087_5_, p_78087_6_, p_78087_7_);
+      this.head.rotateAngleX = this.headRotationAngleX;
   }
 	
 }

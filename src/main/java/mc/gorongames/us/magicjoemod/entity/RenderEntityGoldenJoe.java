@@ -1,5 +1,6 @@
 package mc.gorongames.us.magicjoemod.entity;
 
+import mc.gorongames.us.magicjoemod.entity.layer.LayerGoldenJoeWool;
 import mc.gorongames.us.magicjoemod.lib.Constants;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -16,7 +17,7 @@ public class RenderEntityGoldenJoe extends RenderLiving {
 	
 	public RenderEntityGoldenJoe(RenderManager p_i46153_1_, ModelBase p_i46153_2_, float p_i46153_3_) {
 		super(p_i46153_1_, p_i46153_2_, p_i46153_3_);
-		this.addLayer(new LayerJoeWool(this));
+		this.addLayer(new LayerGoldenJoeWool(this));
 	}
 	
 	protected ResourceLocation func_180572_a(EntityGoldenJoe entity) {

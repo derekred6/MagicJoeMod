@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.layers.LayerSheepWool"/>
-<fullyQualifiedTypeName name="mc.gorongames.us.magicjoemod.entity.RenderEntityGoldenJoe"/>
-<fullyQualifiedTypeName name="mc.gorongames.us.magicjoemod.entity.EntityGoldenJoe"/>
+<fullyQualifiedTypeName name="mc.gorongames.us.magicjoemod.items.ItemGoldenScraps"/>
+<fullyQualifiedTypeName name="mc.gorongames.us.magicjoemod.items.ModItems"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 </qualifiedTypeNameHistroy>

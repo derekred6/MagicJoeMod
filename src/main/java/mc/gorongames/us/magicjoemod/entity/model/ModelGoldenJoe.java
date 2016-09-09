@@ -1,12 +1,11 @@
 package mc.gorongames.us.magicjoemod.entity.model;
 
+import mc.gorongames.us.magicjoemod.entity.EntityGoldenJoe;
 import net.minecraft.client.model.ModelQuadruped;
 import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.passive.EntitySheep;
-import net.minecraft.util.MathHelper;
 
 public class ModelGoldenJoe extends ModelQuadruped {
 	
@@ -16,9 +15,9 @@ public class ModelGoldenJoe extends ModelQuadruped {
 //	public ModelRenderer Leg2 = new ModelRenderer(this, 0, 0);
 //	public ModelRenderer Leg3 = new ModelRenderer(this, 0, 0);
 //	public ModelRenderer Leg4 = new ModelRenderer(this, 0, 0);
-	private float headRotationAngleX;
     private static final String __OBFID = "CL_00000853";	
-  
+    private float field_78153_i;
+    
   public ModelGoldenJoe() {
 	  
 	  super(12, 0.0F);
@@ -56,12 +55,16 @@ public class ModelGoldenJoe extends ModelQuadruped {
       
 
   }
-  
+
+  /**
+   * Used for easily adding entity-dependent animations. The second and third float params here are the same second
+   * and third as in the setRotationAngles method.
+   */
   public void setLivingAnimations(EntityLivingBase p_78086_1_, float p_78086_2_, float p_78086_3_, float p_78086_4_)
   {
       super.setLivingAnimations(p_78086_1_, p_78086_2_, p_78086_3_, p_78086_4_);
-      this.head.rotationPointY = 6.0F + ((EntitySheep)p_78086_1_).getHeadRotationPointY(p_78086_4_) * 9.0F;
-      this.headRotationAngleX = ((EntitySheep)p_78086_1_).getHeadRotationAngleX(p_78086_4_);
+      this.head.rotationPointY = 6.0F + ((EntityGoldenJoe)p_78086_1_).getHeadRotationPointY(p_78086_4_) * 9.0F;
+      this.field_78153_i = ((EntityGoldenJoe)p_78086_1_).getHeadRotationAngleX(p_78086_4_);
   }
   
 //  public void render(Entity entity, float time, float limbSwingDistance, float p_78088_4_, float headYRot, float headXRot, float YTrans) {
@@ -110,31 +113,16 @@ public class ModelGoldenJoe extends ModelQuadruped {
 //    model.rotateAngleY = y;
 //    model.rotateAngleZ = z;
 //  }
-  
-  public void setRotationAngles(float time, float limbSwingDistance, float p_78087_3_, float headYRot, float headXRot, Entity entity) {
 
-	  this.setRotationAngles(time, limbSwingDistance, p_78087_3_, headYRot, headXRot, entity);
-	  this.head.rotateAngleX = this.headRotationAngleX;
-//	  float f6 = (180F / (float)Math.PI);
-//      this.Head.rotateAngleX = time / (180F / (float)Math.PI);
-//      this.Head.rotateAngleY = time / (180F / (float)Math.PI);
-//      this.Body.rotateAngleX = ((float)Math.PI / 2F);
-//      this.Leg1.rotateAngleX = MathHelper.cos(time * 0.6662F) * 1.4F * limbSwingDistance;
-//      this.Leg2.rotateAngleX = MathHelper.cos(time * 0.6662F + (float)Math.PI) * 1.4F * limbSwingDistance;
-//      this.Leg3.rotateAngleX = MathHelper.cos(time * 0.6662F + (float)Math.PI) * 1.4F * limbSwingDistance;
-//      this.Leg4.rotateAngleX = MathHelper.cos(time * 0.6662F) * 1.4F * limbSwingDistance;
-	  
-//		this.Head.rotateAngleX = HeadXRot / (180f / (float)Math.PI);
-//		this.Head.rotateAngleY = HeadYRot / (180f / (float)Math.PI);
-		
-
-//		this.Body.rotateAngleX = ((float)Math.PI / 2f);
-//		
-//
-//		this.Leg1.rotateAngleX = MathHelper.cos(time * 0.6662f) * 1.4f * limbSwingDistance;
-//		this.Leg2.rotateAngleX = MathHelper.cos(time * 0.6662f + (float)Math.PI) * 1.4f * limbSwingDistance;
-//		this.Leg3.rotateAngleX = MathHelper.cos(time * 0.6662f + (float)Math.PI) * 1.4f * limbSwingDistance;
-//		this.Leg4.rotateAngleX = MathHelper.cos(time * 0.6662f) * 1.4f * limbSwingDistance;
+  /**
+   * Sets the model's various rotation angles. For bipeds, par1 and par2 are used for animating the movement of arms
+   * and legs, where par1 represents the time(so that arms and legs swing back and forth) and par2 represents how
+   * "far" arms and legs can swing at most.
+   */
+  public void setRotationAngles(float p_78087_1_, float p_78087_2_, float p_78087_3_, float p_78087_4_, float p_78087_5_, float p_78087_6_, Entity p_78087_7_)
+  {
+      super.setRotationAngles(p_78087_1_, p_78087_2_, p_78087_3_, p_78087_4_, p_78087_5_, p_78087_6_, p_78087_7_);
+      this.head.rotateAngleX = this.field_78153_i;
   }
 	
 }
