@@ -1,12 +1,12 @@
-[20:44:54] [Client thread/INFO]: Setting user: Player983
-[20:44:56] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:44:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod, FMLFileResourcePack:Magic Joe Mod
-[20:44:58] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:44:58] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[20:44:58] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:44:58] [Thread-9/INFO]: OpenAL initialized.
-[20:44:59] [Sound Library Loader/INFO]: Sound engine started
-[20:44:59] [Client thread/WARN]: Invalid sounds.json
+[16:19:32] [Client thread/INFO]: Setting user: Player497
+[16:19:41] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:19:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod, FMLFileResourcePack:Magic Joe Mod
+[16:19:54] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:19:55] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[16:19:55] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:19:55] [Thread-9/INFO]: OpenAL initialized.
+[16:19:55] [Sound Library Loader/INFO]: Sound engine started
+[16:19:58] [Client thread/WARN]: Invalid sounds.json
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
 	at com.google.gson.Gson.fromJson(Gson.java:815) ~[Gson.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:768) ~[Gson.class:?]
@@ -34,7 +34,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[MapTypeAdapterFactory$Adapter.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:803) ~[Gson.class:?]
 	... 19 more
-[20:44:59] [Client thread/WARN]: Invalid sounds.json
+[16:19:58] [Client thread/WARN]: Invalid sounds.json
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
 	at com.google.gson.Gson.fromJson(Gson.java:815) ~[Gson.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:768) ~[Gson.class:?]
@@ -62,16 +62,16 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[MapTypeAdapterFactory$Adapter.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:803) ~[Gson.class:?]
 	... 19 more
-[20:45:00] [Client thread/INFO]: Created: 16x16 textures-atlas
-[20:45:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod, FMLFileResourcePack:Magic Joe Mod
-[20:45:01] [Client thread/INFO]: SoundSystem shutting down...
-[20:45:01] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[20:45:01] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[20:45:01] [Thread-11/INFO]: Initializing LWJGL OpenAL
-[20:45:01] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[20:45:01] [Thread-11/INFO]: OpenAL initialized.
-[20:45:01] [Sound Library Loader/INFO]: Sound engine started
-[20:45:02] [Client thread/WARN]: Invalid sounds.json
+[16:20:05] [Client thread/INFO]: Created: 16x16 textures-atlas
+[16:20:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod, FMLFileResourcePack:Magic Joe Mod
+[16:20:11] [Client thread/INFO]: SoundSystem shutting down...
+[16:20:11] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:20:11] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:20:11] [Thread-11/INFO]: Initializing LWJGL OpenAL
+[16:20:11] [Thread-11/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:20:11] [Thread-11/INFO]: OpenAL initialized.
+[16:20:12] [Sound Library Loader/INFO]: Sound engine started
+[16:20:16] [Client thread/WARN]: Invalid sounds.json
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
 	at com.google.gson.Gson.fromJson(Gson.java:815) ~[Gson.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:768) ~[Gson.class:?]
@@ -102,7 +102,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[MapTypeAdapterFactory$Adapter.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:803) ~[Gson.class:?]
 	... 22 more
-[20:45:02] [Client thread/WARN]: Invalid sounds.json
+[16:20:16] [Client thread/WARN]: Invalid sounds.json
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
 	at com.google.gson.Gson.fromJson(Gson.java:815) ~[Gson.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:768) ~[Gson.class:?]
@@ -133,39 +133,35 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[MapTypeAdapterFactory$Adapter.class:?]
 	at com.google.gson.Gson.fromJson(Gson.java:803) ~[Gson.class:?]
 	... 22 more
-[20:45:02] [Client thread/INFO]: Created: 512x512 textures-atlas
-[20:45:05] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[20:45:05] [Server thread/INFO]: Generating keypair
-[20:45:05] [Server thread/INFO]: Preparing start region for level 0
-[20:45:06] [Server thread/INFO]: Changing view distance to 4, from 10
-[20:45:07] [Server thread/INFO]: Player983[local:E:1839f47d] logged in with entity id 378 at (290.8858480067542, 71.0, 150.20402415737342)
-[20:45:07] [Server thread/INFO]: Player983 joined the game
-[20:47:18] [Server thread/INFO]: Saving and pausing game...
-[20:47:18] [Server thread/INFO]: Saving chunks for level 'test'/Overworld
-[20:47:18] [Server thread/INFO]: Saving chunks for level 'test'/Nether
-[20:47:18] [Server thread/INFO]: Saving chunks for level 'test'/The End
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:45] [Chunk Batcher 0/WARN]: Biome ID is out of bounds: -1, defaulting to 0 (Ocean)
-[20:47:58] [Server thread/INFO]: Saving and pausing game...
-[20:47:58] [Server thread/INFO]: Saving chunks for level 'test'/Overworld
-[20:47:58] [Server thread/INFO]: Saving chunks for level 'test'/Nether
-[20:47:58] [Server thread/INFO]: Saving chunks for level 'test'/The End
-[20:53:10] [Server thread/INFO]: Stopping server
-[20:53:10] [Server thread/INFO]: Saving players
-[20:53:10] [Server thread/INFO]: Saving worlds
-[20:53:10] [Server thread/INFO]: Saving chunks for level 'test'/Overworld
-[20:53:10] [Server thread/INFO]: Saving chunks for level 'test'/Nether
-[20:53:10] [Server thread/INFO]: Saving chunks for level 'test'/The End
-[20:53:11] [Client thread/INFO]: Stopping!
-[20:53:11] [Client thread/INFO]: SoundSystem shutting down...
-[20:53:11] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:20:22] [Client thread/INFO]: Created: 512x512 textures-atlas
+[16:21:17] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[16:21:17] [Server thread/INFO]: Generating keypair
+[16:21:18] [Server thread/INFO]: Preparing start region for level 0
+[16:21:19] [Server thread/INFO]: Preparing spawn area: 6%
+[16:21:20] [Server thread/INFO]: Preparing spawn area: 42%
+[16:21:21] [Server thread/INFO]: Preparing spawn area: 75%
+[16:21:23] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:21:26] [Server thread/INFO]: Player497[local:E:9f81cd98] logged in with entity id 387 at (293.36774479707293, 76.86436911614331, 145.41832861769873)
+[16:21:26] [Server thread/INFO]: Player497 joined the game
+[16:21:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6848ms behind, skipping 136 tick(s)
+[16:21:30] [Server thread/INFO]: Saving and pausing game...
+[16:21:31] [Server thread/INFO]: Saving chunks for level 'test'/Overworld
+[16:21:32] [Server thread/INFO]: Saving chunks for level 'test'/Nether
+[16:21:32] [Server thread/INFO]: Saving chunks for level 'test'/The End
+[16:21:42] [Server thread/INFO]: Saving and pausing game...
+[16:21:42] [Server thread/INFO]: Saving chunks for level 'test'/Overworld
+[16:21:42] [Server thread/INFO]: Saving chunks for level 'test'/Nether
+[16:21:42] [Server thread/INFO]: Saving chunks for level 'test'/The End
+[16:22:38] [Server thread/INFO]: Saving and pausing game...
+[16:22:38] [Server thread/INFO]: Saving chunks for level 'test'/Overworld
+[16:22:38] [Server thread/INFO]: Saving chunks for level 'test'/Nether
+[16:22:38] [Server thread/INFO]: Saving chunks for level 'test'/The End
+[16:22:39] [Server thread/INFO]: Stopping server
+[16:22:39] [Server thread/INFO]: Saving players
+[16:22:39] [Server thread/INFO]: Saving worlds
+[16:22:39] [Server thread/INFO]: Saving chunks for level 'test'/Overworld
+[16:22:39] [Server thread/INFO]: Saving chunks for level 'test'/Nether
+[16:22:39] [Server thread/INFO]: Saving chunks for level 'test'/The End
+[16:22:42] [Client thread/INFO]: Stopping!
+[16:22:42] [Client thread/INFO]: SoundSystem shutting down...
+[16:22:42] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
